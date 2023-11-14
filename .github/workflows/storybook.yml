@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install packages
-        run: yarn install
+        run: npm install
       - name: build storybook
-        run: yarn build:storybook
+        run: npm build:storybook
       - name: deploy storybook
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
